@@ -1,0 +1,3 @@
+'https://api.openweathermap.org/data/2.5/weather?q=' + query + '&units=metric&appid=ea58e3dbb6b92d20049108f023becfe6'
+
+83047543b8cc78be02fe1933f9232cba

@@ -1,0 +1,29 @@
+<%- include('header'); -%>
+
+        <section class="current-weather">
+            <h2>Current Weather</h2>
+            <div class="weather-info">
+                <p id="location">Location: <b><%= queryresult%></b></p>
+                <p id="temperature">Temperature:<b><%= temper%>°C </b></p>
+                <p id="humidity">Humidity:  <b><%= humidity%>%</b></p>
+                <p id="wind-speed">Wind Speed: <b><%=windspeed%>mph </b></p>
+            </div>
+        </section>
+        <section class="forecast">
+            <h2>Coordinate</h2>
+            <div class="forecast-info">
+            <p>Longtitude:<b><%= lon%></b></p>
+            <p>Latitude:<b> <%= lat%></b></p>
+            </div>
+        </section>
+        <section class="radar">
+            <h2>Cloud preveiw</h2>
+            <div class="radar-map">
+                <img src="<%= imageUrls %>" alt="Cloud">
+            </div>
+
+            <form action="/" method="get">
+                <button type="submit">Choose Another City</button>
+            </form>
+        </section>
+        <%- include('footer'); -%>

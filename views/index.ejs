@@ -1,0 +1,22 @@
+<%- include('header'); -%>
+
+        <section class="search-city">
+            <h1>WeatherWave</h1>
+           <p>Your Go-To Weather App Get real-time weather updates and accurate forecasts with WeatherWave. <br> Enter your city to receive current conditions, a 5-day forecast, and live radar maps. <br> Stay informed and prepared for any weather with our easy-to-use interface.</p>
+           <p> Features: 
+            <ul>
+                <li><B>Real-time weather updates</B></li>
+                <li><B>5-day forecast</B></li>
+                <li><B>Live radar maps</B></li>
+                <li><B>Severe weather alerts</B></li>
+            </ul>
+             Global coverage Download WeatherWave today for reliable weather information at your fingertips! </p> <br>
+            <h2>Enter Your City</h2>
+            <form id="city-form" action="/result" method="POST">
+                <input type="text" id="city-input" name="cityName" placeholder="Enter city name" required>
+                <button type="submit">Get Weather</button>
+            </form>
+        </section>
+   
+        <%- include('footer'); -%>
+
