@@ -3,8 +3,9 @@ const express = require('express');
 const ejs = require('ejs')
 const app = express();
 const bodyParser = require('body-parser');
-const port = 7300;
+const port = process.env.PORT||7300;
 const https = require('https');
+const server = https.createServer(app);
 app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({extended:true}));
